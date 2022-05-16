@@ -3,7 +3,7 @@
 
 ## Screenshot
 
-![Screenshot](https://github.com/unipine/nft-mint-dapp/img/ScreenShot_20220517062715.jpeg)
+![Screenshot](https://github.com/unipine/nft-mint-dapp/blob/main/img/ScreenShot_20220517062715.jpeg)
 
 ## Frontend
 
