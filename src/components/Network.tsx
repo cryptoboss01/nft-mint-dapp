@@ -1,0 +1,40 @@
+import { Button } from "@mui/material";
+import { useWeb3React } from "@web3-react/core";
+
+const Network = () => {
+  const { chainId } = useWeb3React();
+
+  const getNetworkName = () => {
+    switch(chainId) {
+      case 1:
+        return "Mainnet";
+      case 3:
+        return "Rospten"
+      default:
+        return "";
+    }
+  }
+
+  return (
+    <Button>
+      <span>Network</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        width="1rem"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+        />
+      </svg>
+      <span>{getNetworkName()}</span>
+    </Button>
+  );
+};
+
+export default Network;
